@@ -25,7 +25,7 @@ namespace Cwiczenia_6.Persistance
             
 
             modelBuilder.Entity<Medicament>()
-                .HasMany(p => p.Prescription_Medicaments)
+                .HasMany(p => p.PrescriptionMedicaments)
                 .WithOne(p => p.Medicament)
                 .HasForeignKey(p => p.IdMedicament);
 
